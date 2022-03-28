@@ -1,0 +1,17 @@
+<html>
+{% load static %}
+<head><title>Fack-email</title></head>
+<link rel="stylesheet" href={%  static 'css1/hello.css' %}>
+<body background={%  static 'img1/neon.jpg' %}>
+   <div id="con" >Fack E-mail
+       
+   </div>
+   <form method="post">
+       {% csrf_token %}
+   <input id="enemy" name="emails" type="email" placeholder="Enter The Enemys E-mail" required>
+   <input id="enemy2" name="counts" type="text" placeholder="How Many E-mails">
+   <input id="enemy3"  name="contents" type="text" placeholder="Content Do You Want Send"><br>
+   <input type="submit" id="sub">
+   </form>
+</body>
+</html>
